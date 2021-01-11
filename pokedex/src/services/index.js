@@ -1,4 +1,4 @@
-const baseUrl = 'http://192.168.137.1:3000/api'
+const baseUrl = 'http://192.168.8.104:3000/api'
 
 async function getAll ({ collection }) {
   return window.fetch(`${baseUrl}/${collection}`)

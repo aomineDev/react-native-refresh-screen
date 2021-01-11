@@ -1,4 +1,7 @@
 const mongoose = require('mongoose')
+const config = require('../config')
+
+const { mongo } = config
 
 const options = {
   useNewUrlParser: true,
@@ -7,7 +10,7 @@ const options = {
 }
 
 function connect () {
-  mongoose.connect('mongodb+srv://db_user_aomine:OFLKQPs4mkQb8ZB8@cluster0.ilra5.mongodb.net/pokedex', options)
+  mongoose.connect(`mongodb+srv://${mongo.user}:${mongo.password}@${mongo.host}/${mongo.database}`, options)
     .then(() => {
       console.log('[mongo] mongo connected succesfuly')
     })
