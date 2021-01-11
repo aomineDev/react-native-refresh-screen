@@ -7,7 +7,7 @@ const options = {
 }
 
 function connect () {
-  mongoose.connect('mongodb+srv://db_user_aomine:lSQkHmpfV5J6V5J2@cluster0.ilra5.mongodb.net/pokedex', options)
+  mongoose.connect('mongodb+srv://db_user_aomine:OFLKQPs4mkQb8ZB8@cluster0.ilra5.mongodb.net/pokedex', options)
     .then(() => {
       console.log('[mongo] mongo connected succesfuly')
     })
